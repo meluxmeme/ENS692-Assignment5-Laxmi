@@ -27,8 +27,8 @@ def index():
     return "Hello World!"
 
 
-@app.route("/hello/Laxmi")
-def hello_there(name='Laxmi'):
+@app.route("/hello/<name>")
+def hello_there(name):
     """
     This route shows a bit more of what we can do, including some 'REST'full user 
     interaction.  If a user specifies a name in the url like so: http://localhost:5000/hello/supercoder
